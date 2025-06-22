@@ -17,5 +17,7 @@ def convert_to_fahrenheit():
 
 if usertwo == "F":
    convert_to_fahrenheit()
-else:
+elif usertwo == "C":
     convert_to_celsius()
+else :
+    print('Invalid temperature. Please enter a numeric value.')
