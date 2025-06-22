@@ -11,8 +11,8 @@ def  convert_to_celsius():
     
 
 def convert_to_fahrenheit():
-    fahrenheit = (user-32) * 9/5
-    print(f"{user}°C is ",fahrenheit,"°F")
+   fahrenheit = user * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
+   print(f"{user}°C is ",fahrenheit,"°F")
 
 
 if usertwo == "F":
