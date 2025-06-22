@@ -1,16 +1,18 @@
-global FAHRENHEIT_TO_CELSIUS_FACTOR
+global FAHRENHEIT_TO_CELSIUS_FACTOR 
+FAHRENHEIT_TO_CELSIUS_FACTOR  = 5/9
 global CELSIUS_TO_FAHRENHEIT_FACTOR
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5 
 user = int(input("Enter the temperature to convert:"))
 usertwo = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 
 def  convert_to_celsius():
-    FAHRENHEIT_TO_CELSIUS_FACTOR = (user-32) * 5/9 
-    print(f"{user}°F is ",FAHRENHEIT_TO_CELSIUS_FACTOR,"°C")
+    celsius = (user-32) * FAHRENHEIT_TO_CELSIUS_FACTOR 
+    print(f"{user}°F is ",celsius,"°C")
     
 
 def convert_to_fahrenheit():
-    CELSIUS_TO_FAHRENHEIT_FACTOR = (user-32) * 9/5
-    print(f"{user}°C is ",CELSIUS_TO_FAHRENHEIT_FACTOR,"°F")
+    fahrenheit = (user-32) * 9/5
+    print(f"{user}°C is ",fahrenheit,"°F")
 
 
 if usertwo == "F":
