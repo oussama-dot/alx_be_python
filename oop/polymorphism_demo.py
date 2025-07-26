@@ -1,16 +1,16 @@
 import math
 class Shape:
-    def __init__(self,height=None,width=None):
-        self.height = height
+    def __init__(self,length=None,width=None):
+        self.length = length
         self.width = width
         
     def area(self):
         raise NotImplementedError("derived classes need to override this method")
 class Rectangle(Shape):
-    def __init__(self, height, width):
-        super().__init__(height, width)
+    def __init__(self, length, width):
+        super().__init__(length, width)
     def area(self):
-        return self.height* self.width
+        return self.length* self.width
 class Circle(Shape):
     def __init__(self,radius):
         super().__init__()
